@@ -1,2 +1,2 @@
-aws ecr create-repository --repository-name my-strands-agent \
---region us-west-2
+aws ecr create-repository --repository-name bedrock-agentcore/fastapi \
+--region us-east-1
