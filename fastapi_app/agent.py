@@ -47,9 +47,9 @@ async def invoke_agent(request: InvocationRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Agent processing failed: {str(e)}")
 
-# @app.get("/ping")
-# async def ping():
-#     return {"status": "healthy"}
+@app.get("/ping")
+async def ping():
+    return {"status": "healthy"}
 
 if __name__ == "__main__":
     import uvicorn
